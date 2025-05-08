@@ -174,7 +174,8 @@ footer {
     padding: 20px 0;
 }
 
-footer a {
+footer a,
+footer p {
     color: rgb(170, 170, 170);
 }
 
