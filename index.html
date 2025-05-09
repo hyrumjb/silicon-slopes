@@ -18,7 +18,9 @@
     <header>
         <div id="header-left">
             <img src="images/favicon.svg" alt="Logo" id="logo">
-            <h1>Silicon Slopes</h1>
+            <a href="https://siliconslopes.com/">
+                <h1>Silicon Slopes</h1>
+            </a>
         </div>
 
         <div id="header-right">
@@ -44,6 +46,16 @@
 
     <main>
         <img src="images/background.jpg" alt="Salt Lake City skyline" id="main-image">
+        <div id="settings">
+            <span id="close-instructions">&times;</span>
+            <h3>Some additional website controls:</h3>
+            <div id="name-form">
+                <input type="text" id="name" placeholder="Name">
+                <input type="submit" id="submit">
+            </div>
+            <button id="remove-images">Remove Images</button>
+            <p>Press V to turn the background violet or B to turn it blue.</p>
+        </div>
         <p class="intro-content">Silicon Slopes refers to the burgeoning tech hub in Utah, particularly along the Wasatch Front, encompassing cities like Lehi, Provo, Salt Lake City, and Park City. The term draws a parallel to Silicon Valley and references the state’s mountainous landscape. Over the last two decades, this region has seen explosive growth in technology, venture capital, and innovation. Thanks to a business-friendly environment, a highly educated workforce (fed by universities like BYU and the University of Utah), and lower costs of living and operation, Utah has become a magnet for both startups and established tech firms. The nonprofit Silicon Slopes organization also plays a key role, fostering community, events, and support for local tech entrepreneurs.</p>
         <p class="intro-content">Utah is home to several important tech companies. Qualtrics, known for its customer experience and survey software, was founded in Provo and sold to SAP for $8 billion before spinning out as a public company. Pluralsight, based in Draper, provides tech learning and workforce development tools. Domo, founded by Josh James (also a key figure from Omniture), offers cloud-based business intelligence tools. Other key players include Lucid Software (known for Lucidchart), Podium, Divvy (acquired by Bill.com), and Entrata. Important figures in the scene include Ryan Smith (founder of Qualtrics and owner of the Utah Jazz), Josh James, and Aaron Skonnard (CEO of Pluralsight). Their leadership and vision have helped elevate Utah into a national tech powerhouse.</p>
 
@@ -124,7 +136,7 @@
         </div>
     </main>
 
-    <footer>
+    <footer id="footer-light">
         <h4>Learn More</h4>
         <ul>
             <li><a href="https://www.siliconslopes.com/">Silicon Slopes</a></li>
@@ -135,18 +147,7 @@
         <p>Copyright &#169; 2025 Hyrum Bradshaw. All rights reserved.</p>
     </footer>
 
-    <script>
-        const nav = document.getElementById("my-nav");
-        const openNav = document.getElementById("open-nav");
-        const closeNav = document.getElementById("close-nav");
-        
-        function toggleNav() {
-            nav.classList.toggle("open");
-        }
-
-        openNav.addEventListener("click", toggleNav);
-        closeNav.addEventListener("click", toggleNav);
-    </script>
+    <script src="index.js"></script>
 </body>
 
 </html>
