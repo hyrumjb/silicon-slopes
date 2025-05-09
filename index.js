@@ -1,14 +1,46 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", () => {
-    //Name checker
+    const sun = document.getElementById("sun");
+    const moon = document.getElementById("moon");
 
-    window.onload = function () {
+    window.onload = function() {
+        const savedTheme = localStorage.getItem("theme")
+
+        if (savedTheme === "light") {
+            document.body.classList.remove("dark");
+            sun.classList.add("hidden");
+            moon.classList.remove("hidden");
+        } else {
+            document.body.classList.add("dark");
+            sun.classList.remove("hidden");
+            moon.classList.add("hidden");
+        }
+
         const savedName = localStorage.getItem('userName');
         if (savedName) {
             displayName(savedName);
         }
-    }
+    };
+
+    // Theme switcher
+
+    document.getElementById("switcher").addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+
+        const isDark = document.body.classList.contains("dark");
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+
+        if (isDark) {
+            sun.classList.remove("hidden");
+            moon.classList.add("hidden");
+        } else {
+            sun.classList.add("hidden");
+            moon.classList.remove("hidden");
+        }
+    });
+
+    // Name checker
 
     function displayName(name) {
         document.querySelectorAll("input").forEach(input => {
