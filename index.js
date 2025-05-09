@@ -48,6 +48,10 @@ document.addEventListener("DOMContentLoaded", () => {
     openNav.addEventListener("click", toggleNav);
     closeNav.addEventListener("click", toggleNav);
 
+    document.querySelectorAll(".selection").forEach(option => {
+        option.addEventListener("click", toggleNav);
+    })
+
     // Additional controls
 
     const removeImages = document.getElementById("remove-images");

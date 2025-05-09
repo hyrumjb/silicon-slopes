@@ -61,6 +61,7 @@ header {
     position: sticky;
     top: 0;
     background-color: white;
+    z-index: 2000;
 }
 
 #header-left {
@@ -243,9 +244,8 @@ h3 {
 footer {
     border-top: 0.5px solid lightgrey;
     height: 250px;
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px 0;
+    width: 100%;
+    padding: 20px 10%;
 }
 
 footer a,
