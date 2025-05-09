@@ -151,7 +151,7 @@ body.dark .side-nav {
 .side-nav nav ul li a {
     text-decoration: none;
     color: var(--text-light);
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
 body.dark .side-nav nav ul li a {
@@ -161,7 +161,7 @@ body.dark .side-nav nav ul li a {
 #close-nav {
     color: rgb(170, 170, 170);
     float: right;
-    font-size: 40px;
+    font-size: 4rem;
     font-weight: bold;
     cursor: pointer;
 }
@@ -183,7 +183,7 @@ main {
 #settings {
     margin: 40px auto;
     width: 70%;
-    background-color: rgb(170, 170, 170);
+    background-image: linear-gradient(var(--accent-grey), white);
     border-radius: 10px;
     padding: 15px;
     position: relative;
@@ -204,6 +204,11 @@ img {
 }
 
 #name-form {
+    text-align: center;
+    margin: 15px 0;
+}
+
+#date-form {
     text-align: center;
     margin: 15px 0;
 }
